@@ -4,6 +4,6 @@
 
 # Honors Algebra with Probability
 
-[Standards](standards.html)
+[Standards](./resources/standards.html)
 
 [<< previous]() [Home](algebra.html) [next >>](unit1/intro.html)
