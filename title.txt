@@ -1,0 +1,4 @@
+---
+title: Honors Algebra with Probability
+author: David Sellers
+...

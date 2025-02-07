@@ -4,11 +4,11 @@
 
 ## Day 5 - Exam Review
 
-Use the properties of equality to justify solving the following.
-
 1. Explain why the definition of division leads to an important caveat that will follow you throughout your mathematical careers.
 
 1. Given the operation $\bigoplus$ defined as $a \bigoplus b = a + b -2$, what is the identity under this operation? The inverse under this operation?
+
+Use the properties of equality to justify solving the following.
 
 1. $3x+4=28$
 1. $4(x-7)+9=11-2(x+1)$
