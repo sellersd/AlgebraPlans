@@ -24,6 +24,6 @@ Simplify each of the following.
 1. $\sqrt[4]{\frac{x^{25}y^{24}}{x^{9}y^{8}}}$
 1. $\sqrt{90}$
 1. $\sqrt{32}$
-1. $\sqrt[3]{40}
+1. $\sqrt[3]{40}$
 
 [<< previous](day4.html) [Home](../algebra.html) [next >>](test.html)
