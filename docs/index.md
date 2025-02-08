@@ -16,7 +16,7 @@
 - [Unit 4](./unit4/day1.html)
 - [Unit 5](./unit5/day1.html)
 - [Unit 6](./unit6/day1.html)
-- [Unit 7](./unit8/day1.html)
-- [Unit 9](./unit9/day1.html)
+- [Unit 7](./unit7/day1.html)
+- [Unit 8](./unit8/day1.html)
 
-[<< previous]() [Home](algebra.html) [next >>](unit1/intro.html)
+[<< previous]() [Home](index.html) [next >>](unit1/intro.html)
