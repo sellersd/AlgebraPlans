@@ -1,4 +1,4 @@
-% Polynomials
+% Polynomial Operatoins
 % David Sellers
 % Spring 25
 
@@ -8,4 +8,20 @@ A **polynomial** is an expression that consists of variables and constants and t
 
 A polynomial consists of many **monomials**. And if we have polynomial consisting of two monomials it is called a **binomial** and with three monomials, a **trinomial**.
 
-[<< previous](../unit2/day3.html) [Home](../algebra.html) [next >>](day5.html)
+We can talk about the **degree** of a polynomial which is the highest power in the polynomial.
+
+## Operations
+
+### Scalar Multiplication
+
+### Polynomial Addition
+
+### Polynomial Multiplication (Distribution)
+
+### Polynomial Division (Caveats Again)
+
+#### Closure
+
+## Set of Polynomials
+
+[<< previous](../unit2/day4.html) [Home](../algebra.html) [next >>](day6.html)
