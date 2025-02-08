@@ -17,9 +17,10 @@
 ---
 
 21. Compare properties of two functions, each represented in a different way (algebraically, graphically, numerically in tables, or by verbal descriptions). Extend from linear to quadratic, exponential, absolute value, and general piecewise.
-22. Interpret the parameters of functions in terms of a context. Extend from linear functions, written in the form mx + b, to exponential functions, written in the form abx.
 
-    - Example: If the function V(t) = 19885(0.75)t describes the value of a car after it has been owned for t years, 19885 represents the purchase price of the car when t = 0, and 0.75 represents the annual rate at which its value decreases.
+22. Interpret the parameters of functions in terms of a context. Extend from linear functions, written in the form $mx + b$, to exponential functions, written in the form $ab^{x}$.
+
+    - Example: If the function $V(t) = 19885(0.75)^{t}$ describes the value of a car after it has been owned for $t$ years, 19885 represents the purchase price of the car when $t = 0$, and 0.75 represents the annual rate at which its value decreases.
 
 23. Distinguish between situations that can be modeled with linear functions and those that can be modeled with exponential functions.
     a. Show that linear functions grow by equal differences over equal intervals, while exponential functions grow by equal factors over equal intervals.
@@ -27,10 +28,12 @@
     c. Define exponential functions to represent situations in which a quantity grows or decays by a constant percent rate per unit interval relative to another.
 
 24. Construct linear and exponential functions, including arithmetic and geometric sequences, given a graph, a description of a relationship, or two input-output pairs (include reading these from a table).
+
 25. Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases.
     a. Graph linear and quadratic functions and show intercepts, maxima, and minima.
     b. Graph piecewise-defined functions, including step functions and absolute value functions.
     c. Graph exponential functions, showing intercepts and end behavior.
+
 26. Calculate and interpret the average rate of change of a function (presented symbolically or as a table) over a specified interval. Estimate the rate of change from a graph. Limit to linear, quadratic, exponential, and absolute value functions.
 
 ---
@@ -39,17 +42,17 @@
 
 ---
 
-3. Define the imaginary number i such that i 2 = -1.
+3. Define the imaginary number $i$ such that $i^{2} = -1$.
 
 4. Add, subtract, and multiply polynomials, showing that polynomials form a system analogous to the integers, namely, they are closed under the operations of addition, subtraction, and multiplication.
 
 5. Use the structure of an expression to identify ways to rewrite it.
 
-- Example: See x4 - y4 as (x2)2 - (y2)2, thus recognizing it as a difference of squares that can be factored as (x2 - y2)(x2 + y2)
+- Example: See $x^{4} - y^{4}$ as $(x^{2})^{2} - (y^{2})^{2}$, thus recognizing it as a difference of squares that can be factored as $(x^{2} - y^{2})(x^{2} + y^{2})$
 
 4. Interpret linear, quadratic, and exponential expressions in terms of a context by viewing one or more of their parts as a single entity.
 
-   - Example: Interpret the accrued amount of investment P(1 + r)t , where P is the principal and r is the interest rate, as the product of P and a factor depending on time t.
+   - Example: Interpret the accrued amount of investment $P(1 + r)^{t}$ , where $P$ is the principal and $r$ is the interest rate, as the product of $P$ and a factor depending on time $t$.
 
 ---
 
@@ -70,11 +73,13 @@
 10. Create equations in two or more variables to represent relationships between quantities in context; graph equations on coordinate axes with labels and scales and use them to make predictions. Limit to contexts arising from linear, quadratic, exponential, absolute value, and linear piecewise functions.
 
 11. Given a relation defined by an equation in two variables, identify the graph of the relation as the set of all its solutions plotted in the coordinate plane. Note: The graph of a relation often forms a curve (which could be a line).
-12. Explain why the x-coordinates of the points where the graphs of the equations y = f(x) and y = g(x) intersect are the solutions of the equation f(x) = g(x).
-    a. Find the approximate solutions of an equation graphically, using tables of values, or finding successive approximations, using technology where appropriate. Note: Include cases where f(x) is a linear, quadratic, exponential, or absolute value function and g(x) is constant or linear.
+
+12. Explain why the x-coordinates of the points where the graphs of the equations $y = f(x)$ and $y = g(x)$ intersect are the solutions of the equation $f(x) = g(x)$.
+    a. Find the approximate solutions of an equation graphically, using tables of values, or finding successive approximations, using technology where appropriate. Note: Include cases where $f(x)$ is a linear, quadratic, exponential, or absolute value function and $g(x)$ is constant or linear.
+
 13. Select an appropriate method to solve a quadratic equation in one variable.
-    a. Use the method of completing the square to transform any quadratic equation in x into an equation of the form (x – p)2 = q that has the same solutions. Explain how the quadratic formula is derived from this form.
-    b. Solve quadratic equations by inspection (such as x2 = 49), taking square roots, completing the square, the quadratic formula, and factoring, as appropriate to the initial form of the equation, and recognize that some solutions may not be real.
+    a. Use the method of completing the square to transform any quadratic equation in x into an equation of the form $(x – p)^{2} = q$ that has the same solutions. Explain how the quadratic formula is derived from this form.
+    b. Solve quadratic equations by inspection (such as $x^{2} = 49$), taking square roots, completing the square, the quadratic formula, and factoring, as appropriate to the initial form of the equation, and recognize that some solutions may not be real.
 
 ---
 
@@ -97,6 +102,7 @@
 ---
 
 18. Solve systems consisting of linear and/or quadratic equations in two variables graphically, using technology where appropriate.
+
 19. Select an appropriate method to solve a system of two linear equations in two variables.
     a. Solve a system of two equations in two variables by using linear combinations; contrast situations in which use of linear combinations is more efficient with those in which substitution is more efficient.
     b. Contrast solutions to a system of two linear equations in two variables produced by algebraic methods with graphical and tabular methods.
@@ -112,6 +118,7 @@
     b. Relate the domain of a function to its graph and, where applicable, to the quantitative relationship it describes. Limit to linear, quadratic, exponential, and absolute value functions.
 
 16. Compare and contrast relations and functions represented by equations, graphs, or tables that show related values; determine whether a relation is a function. Explain that a function f is a special kind of relation defined by the equation y = f(x).
+
 17. Identify the effect on the graph of replacing $f(x)$ by $f(x)+k$, $k \cdot f(x)$, $f(k \cdot x)$, and $f(x +k)$ for specific values of $k$ (both positive and negative); find the value of $k$ given the graphs. Experiment with cases and explain the effects on the graph, using technology as appropriate. Limit to linear, quadratic, exponential, absolute value, and linear piecewise functions.
 
 18. Use graphs and tables to show that a quantity increasing exponentially eventually exceeds a quantity increasing linearly or quadratically.
@@ -128,7 +135,7 @@
     b. Use the vertex form of a quadratic expression to reveal the maximum or minimum value and the axis of symmetry of the function it defines; complete the square to find the vertex form of quadratics with a leading coefficient of one.
     c. Use the properties of exponents to transform expressions for exponential functions.
 
-    - Example: Identify percent rate of change in functions such as y = (1.02)t, y = (0.97)t, y = (1.01)12t, y = (1.2)t/10, and classify them as representing exponential growth or decay.
+    - Example: Identify percent rate of change in functions such as $y = (1.02)^{t}$, $y = (0.97)^{t}$, $y = (1.01)^{12t}$, $y = (1.2)^{t/10}$, and classify them as representing exponential growth or decay.
 
 22. Combine different types of standard functions to write, evaluate, and interpret functions in context. Limit to linear, quadratic, exponential, and absolute value functions.
     a. Use arithmetic operations to combine different types of standard functions to write and evaluate functions.
@@ -203,6 +210,6 @@
 
 41. Explain why the conditional probability of A given B is the fraction of B's outcomes that also belong to A, and interpret the answer in context.
 
-- Example: the probability of drawing a king from a deck of cards, given that it is a face card, is 4/52 12/52, which is 1/3.
+- Example: the probability of drawing a king from a deck of cards, given that it is a face card, is $\frac{\frac{4}{52}}{\frac{12}{52}}$, which is $\frac{1}{3}$.
 
 ---

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="David Sellers" />
+  <title>Probability Learning Targets</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Probability Learning Targets</h1>
+<p class="author">David Sellers</p>
+<p class="date">Springs 2025</p>
+</header>
+<ol start="32" type="1">
+<li><p>Use mathematical and statistical reasoning with bivariate
+categorical data in order to draw conclusions and assess risk.</p>
+<ul>
+<li>Example: In a clinical trial comparing the effectiveness of flu
+shots A and B, 21 subjects in treatment group A avoided getting the flu
+while 29 contracted it. In group B, 12 avoided the flu while 13
+contracted it. Discuss which flu shot appears to be more effective in
+reducing the chances of contracting the flu.</li>
+<li>Possible answer: Even though more people in group A avoided the flu
+than in group B, the proportion of people avoiding the flu in group B is
+greater than the proportion in group A, which suggests that treatment B
+may be more effective in lowering the risk of getting the flu.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Contracted Flu</th>
+<th>Did Not Contract Flu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Flu Shot A</td>
+<td>29</td>
+<td>21</td>
+</tr>
+<tr class="even">
+<td>Flu Shot B</td>
+<td>13</td>
+<td>12</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>42</td>
+<td>33</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Design and carry out an investigation to determine whether there
+appears to be an association between two categorical variables, and
+write a persuasive argument based on the results of the
+investigation.</p>
+<ul>
+<li>Example: Investigate whether there appears to be an association
+between successfully completing a task in a given length of time and
+listening to music while attempting the task. Randomly assign some
+students to listen to music while attempting to complete the task and
+others to complete the task without listening to music. Discuss whether
+students should listen to music while studying, based on that
+analysis.</li>
+</ul></li>
+<li><p>Distinguish between quantitative and categorical data and between
+the techniques that may be used for analyzing data of these two
+types.</p>
+<ul>
+<li>Example: The color of cars is categorical and so is summarized by
+frequency and proportion for each color category, while the mileage on
+each car’s odometer is quantitative and can be summarized by the
+mean.</li>
+</ul></li>
+<li><p>Analyze the possible association between two categorical
+variables.</p>
+<ol type="a">
+<li>Summarize categorical data for two categories in two-way frequency
+tables and represent using segmented bar graphs.</li>
+<li>Interpret relative frequencies in the context of categorical data
+(including joint, marginal, and conditional relative frequencies).</li>
+<li>Identify possible associations and trends in categorical data.</li>
+</ol></li>
+<li><p>Generate a two-way categorical table in order to find and
+evaluate solutions to real-world problems.</p>
+<ol type="a">
+<li>Aggregate data from several groups to find an overall association
+between two categorical variables.</li>
+<li>Recognize and explore situations where the association between two
+categorical variables is reversed when a third variable is considered
+(Simpson’s Paradox).</li>
+</ol>
+<ul>
+<li>Example: In a certain city, Hospital 1 has a higher fatality rate
+than Hospital 2. But when considering mildly-injured patients and
+severely-injured patients as separate groups, Hospital 1 has a lower
+fatality rate among both groups than Hospital 2, since Hospital 1 is a
+Level 1 Trauma Center. Thus, Hospital 1 receives most of the severely
+injured patients who are less likely to survive overall but have a
+better chance of surviving in Hospital 1 than they would in Hospital
+2.</li>
+</ul></li>
+<li><p>Describe events as subsets of a sample space (the set of
+outcomes) using characteristics (or categories) of the outcomes, or as
+unions, intersections, or complements of other events (“or,” “and,”
+“not”).</p></li>
+<li><p>Explain whether two events, A and B, are independent, using
+two-way tables or tree diagrams. Conditional probabilities – that is,
+those probabilities that are “conditioned” by some known information –
+can be computed from data organized in contingency tables. Conditions or
+assumptions may affect the computation of a probability.</p></li>
+<li><p>Compute the conditional probability of event A given event B,
+using two-way tables or tree diagrams.</p></li>
+<li><p>Recognize and describe the concepts of conditional probability
+and independence in everyday situations and explain them using everyday
+language.</p>
+<ul>
+<li>Example: Contrast the chance of having lung cancer if you are a
+smoker with the chance of being a smoker if you have lung cancer.</li>
+</ul></li>
+<li><p>Explain why the conditional probability of A given B is the
+fraction of B’s outcomes that also belong to A, and interpret the answer
+in context.</p></li>
+</ol>
+<ul>
+<li>Example: the probability of drawing a king from a deck of cards,
+given that it is a face card, is <span
+class="math inline">\(\frac{\frac{4}{52}}{\frac{12}{52}}\)</span>, which
+is <span class="math inline">\(\frac{1}{3}\)</span>.</li>
+</ul>
+</body>
+</html>
