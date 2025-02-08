@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="David Sellers" />
+  <title>Sets</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Sets</h1>
+<p class="author">David Sellers</p>
+<p class="date">Spring 25</p>
+</header>
+<h1 id="sets">Sets</h1>
+<p>As discussed previously, sets are a collection of objects. Lets
+consider some useful sets.</p>
+<h2 id="counting">Counting</h2>
+<p>Imagine you and a friend are walking through the woods and you find a
+truffle. After you make this miraculous discovery then you would say you
+had 1 truffle and as you searched for more, you would have 2 truffles, 3
+truffles, etc. However, before you made this initial discovery you were
+not walking around thinking that you had 0 truffles. This is the
+<strong>natural</strong> way to think about counting and leads us to the
+set of natural numbers <span class="math display">\[\mathbb{N} =
+{1,2,3,4,...}.\]</span></p>
+<p>But, now that you have some truffles, you have no choice but to eat
+them. After devouring your find, you now have 0 truffles and some people
+would say we need a new set of numbers for this possibility and others
+would say we do not. Because we are a precocious bunch of students, we
+will consider this set the set of whole numbers <span
+class="math display">\[\mathbb{W}={0,1,2,3,4,...}.\]</span></p>
+<p>Now that all of the truffles are gone, you return to your village and
+brag about how delicious the truffles were. Chef Preston asks if your
+group of truffle searchers could provide her with 10 truffles for her
+new chocolate truffle recipe. You agree, but since you have 0 truffles,
+you now somehow have less than 0 truffles, or you could say you have -10
+truffles. Leading us to the set of <strong>integers</strong> which
+includes the natural numbers, their opposites, and zero. <span
+class="math display">\[\mathbb{Z}={...,-4,-3,-2,-1,0,1,2,3,4,...}\]</span></p>
+<p>You and your friend find 11 truffles, 10 for Chef Preston and 1
+extra. What is there to do with this extra truffle except eat it? If you
+have 1 truffle and 2 people to eat it then neither person receives an
+entire truffle, but all we have at this point are numbers in the set of
+integers, <span class="math inline">\(x \in \mathbb{Z}.\)</span> This
+does not allow for the case where we have 1 item split into 2 pieces,
+perhaps some sort of ratio, <span
+class="math inline">\(\frac{1}{2}.\)</span> These types of numbers are
+the <strong>rational</strong> numbers <span
+class="math display">\[\mathbb{Q} = {...,-4, -\frac{7}{2} -3,
+-\frac{2}{3}, 0, \frac{1}{2}, \frac{10}{5}, \frac{127}{3}, ...}\]</span>
+These numbers are any numbers that can be represented as a ratio and
+therefore include the integers. As decimals, these numbers can all be
+represented as terminating or repeating decimals.</p>
+<p>After eating half a truffle and walking back to town you discover a
+perfectly circular truffle. You measure the circumference and diameter
+and divide these two numbers, and while this number is close to $, you
+notice this does not give you a rational number, it is an
+<strong>irrational</strong> number. The result is a non-repeating,
+non-terminating decimal. This set of numbers is notated as <span
+class="math inline">\(\mathbb{R}-\mathbb{Q}\)</span> or <span
+class="math inline">\(\mathbb{R} \\ \mathbb{Q}.\)</span> Which means the
+set of <strong>real</strong> numbers less the set of rational numbers.
+So what are the real numbers?</p>
+<p>You can think of the set of real numbers <span
+class="math inline">\(\mathbb{R}\)</span> as all numbers that can be
+represented as a ratio or that cannot be represented as a ratio. That is
+the union of the sets of rational and irrational numbers. These are the
+numbers we are usually working with in algebra. However, don’t despair
+our journey through the set of numbers is not over yet.</p>
+<p><a href="../unit2/day1.html">&lt;&lt; previous</a> <a
+href="../algebra.html">Home</a> <a href="day3.html">next
+&gt;&gt;</a></p>
+</body>
+</html>

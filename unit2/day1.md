@@ -1,8 +1,8 @@
-% Lines
+% Sets and Polynomials
 % David Sellers
 % Spring 25
 
-# Lines
+# Sets and Polynomials
 
 ## Learning Targets
 
@@ -19,4 +19,4 @@
 
 - Example: Identify percent rate of change in functions such as $y = (1.02)^{t}$, $y = (0.97)^{t}$, $y = (1.01)^{12t}$, $y = (1.2)^{t/10}$, and classify them as representing exponential growth or decay.
 
-[<< previous](../unit1/test.html) [Home](algebra.html) [next >>](day1.html)
+[<< previous](../unit1/test.html) [Home](../algebra.html) [next >>](day2.html)
