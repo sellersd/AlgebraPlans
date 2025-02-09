@@ -4,4 +4,4 @@
 
 # Quiz
 
-[<< previous](../unit2/day5.html) [Home](../algebra.html) [next >>](day7.html)
+[<< previous](../unit2/day4.html) [Home](../index.html) [next >>](day6.html)

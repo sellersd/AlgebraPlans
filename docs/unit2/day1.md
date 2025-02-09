@@ -21,4 +21,4 @@ After eating half a truffle and walking back to town you discover a perfectly ci
 
 You can think of the set of real numbers $\mathbb{R}$ as all numbers that can be represented as a ratio or that cannot be represented as a ratio. That is the union of the sets of rational and irrational numbers. These are the numbers we are usually working with in algebra. However, don't despair our journey through the set of numbers is not over yet.
 
-[<< previous](../unit2/day1.html) [Home](../algebra.html) [next >>](day3.html)
+[<< previous]() [Home](../index.html) [next >>](day2.html)

@@ -1,4 +1,4 @@
-% Learning Targets Equations
+% Learning Targets - Equations
 % David Sellers
 % Spring 2025
 

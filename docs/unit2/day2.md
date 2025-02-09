@@ -49,4 +49,4 @@ Not all roots of negatives require complex numbers.
 
 So we now know that for $x^{2}=-4$, $x=\pm 2i.$
 
-[<< previous](../unit2/day2.html) [Home](../algebra.html) [next >>](day4.html)
+[<< previous](../unit2/day1.html) [Home](../index.html) [next >>](day3.html)

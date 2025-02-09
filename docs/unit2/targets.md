@@ -6,7 +6,7 @@
 
 ## Learning Targets
 
-3. Define the imaginary number i such that i 2 = -1.
+3. Define the imaginary number $i$ such that $i^{2} = -1$.
 
 4. Add, subtract, and multiply polynomials, showing that polynomials form a system analogous to the integers, namely, they are closed under the operations of addition, subtraction, and multiplication.
 

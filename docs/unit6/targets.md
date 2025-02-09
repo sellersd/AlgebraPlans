@@ -1,3 +1,7 @@
+% Learning Targets - Functions
+% David Sellers
+% Springs 2025
+
 11. Given a relation defined by an equation in two variables, identify the graph of the relation as the set of all its solutions plotted in the coordinate plane. Note: The graph of a relation often forms a curve (which could be a line).
 
 12. Explain why the x-coordinates of the points where the graphs of the equations $y = f(x)$ and $y = g(x)$ intersect are the solutions of the equation $f(x) = g(x)$.

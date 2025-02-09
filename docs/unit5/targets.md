@@ -1,3 +1,7 @@
+% Learning Targets - Systems
+% David Sellers
+% Springs 2025
+
 18. Solve systems consisting of linear and/or quadratic equations in two variables graphically, using technology where appropriate.
 
 19. Select an appropriate method to solve a system of two linear equations in two variables.

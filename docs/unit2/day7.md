@@ -20,4 +20,4 @@ Based on our previous experience, we know the GCF of the constants is $3^{1}$ an
 
 Find the GCF for $60x^{12}+15x^{9} +9x^{6} + 3x^{3}.$
 
-[<< previous](../unit2/day7.html) [Home](../algebra.html) [next >>](day9.html)
+[<< previous](../unit2/day6.html) [Home](../index.html) [next >>](day8.html)

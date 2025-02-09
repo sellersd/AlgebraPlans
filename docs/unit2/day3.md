@@ -8,4 +8,4 @@ A **polynomial** is an expression that consists of variables and constants and t
 
 A polynomial consists of many **monomials**. And if we have polynomial consisting of two monomials it is called a **binomial** and with three monomials, a **trinomial**.
 
-[<< previous](../unit2/day3.html) [Home](../algebra.html) [next >>](day5.html)
+[<< previous](../unit2/day2.html) [Home](../index.html) [next >>](day4.html)

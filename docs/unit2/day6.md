@@ -34,4 +34,4 @@ If we take each factor represented in each prime factorization and take the **sm
 
 Similarly, for the least common multiple, we take each of the factors from the prime factorization and we take the product of the **largest** power of each factor will return the LCM. So, $2^{2} \cdot 3^{2} = 36$ is the LCM.
 
-[<< previous](../unit2/day6.html) [Home](../algebra.html) [next >>](day8.html)
+[<< previous](../unit2/day5.html) [Home](../index.html) [next >>](day7.html)

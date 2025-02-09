@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="David Sellers" />
-  <title>Polynomial Operatoins</title>
+  <title>Polynomial Operations</title>
   <style>
     html {
       color: #1a1a1a;
@@ -174,7 +174,7 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Polynomial Operatoins</h1>
+<h1 class="title">Polynomial Operations</h1>
 <p class="author">David Sellers</p>
 <p class="date">Spring 25</p>
 </header>
@@ -193,15 +193,42 @@ have polynomial consisting of two monomials it is called a
 is the highest power in the polynomial.</p>
 <h2 id="operations">Operations</h2>
 <h3 id="scalar-multiplication">Scalar Multiplication</h3>
+<p>Given a polynomial <span class="math inline">\(ax\)</span> and a
+scalar <span class="math inline">\(k\)</span>, then <span
+class="math inline">\(k \cdot ax = kax\)</span>.</p>
 <h3 id="polynomial-addition">Polynomial Addition</h3>
+<p>Polynomials can be added by combining like terms. This means we will
+add together any terms in which the variables have the same degree.</p>
+<p>We can think of polynomial subtraction either as its own operation or
+we can treat it as addition with a scalar multiple.</p>
+<p><span class="math inline">\(ax - bx = ax + -1(bx)\)</span></p>
 <h3 id="polynomial-multiplication-distribution">Polynomial
 Multiplication (Distribution)</h3>
+<p>We can multiply monomials by multiplying the constants and variables,
+that is <span class="math inline">\(ax \cdot bx = (ab) \cdot (xx) =
+abx^{2}\)</span>. For larger polynomials we need to develop a more
+rigorous rule set. Consider <span
+class="math inline">\(ax(bx+c)\)</span>, the product of a monomial and a
+binomial. Here we need to appeal to the distributive property which
+results in <span class="math inline">\(ax\cdot bx + ax \cdot c = abx^{2}
++ acx\)</span>.</p>
+<p>This is the idea we need for multiplying larger polynomials. We must
+make sure every term in each polynomial is multiplied together.</p>
+<ul>
+<li>(ax + b)(cx+d)</li>
+<li>(ax + b)(cx^{2}+dx+f)</li>
+</ul>
+<p>Multiplying binomials is a common operation and raising them to
+higher powers can be quite tedious. We have two common methods for
+addressing this issue.</p>
+<h4 id="pascals-triangle">Pascal’s Triangle</h4>
+<p>The most accessible of these two methods is Pascal’s Triangle.</p>
+<h4 id="the-binomial-theorem">The Binomial Theorem</h4>
 <h3 id="polynomial-division-caveats-again">Polynomial Division (Caveats
 Again)</h3>
 <h4 id="closure">Closure</h4>
 <h2 id="set-of-polynomials">Set of Polynomials</h2>
-<p><a href="../unit2/day4.html">&lt;&lt; previous</a> <a
-href="../algebra.html">Home</a> <a href="day6.html">next
-&gt;&gt;</a></p>
+<p><a href="../unit2/day3.html">&lt;&lt; previous</a> <a
+href="../index.html">Home</a> <a href="day5.html">next &gt;&gt;</a></p>
 </body>
 </html>
