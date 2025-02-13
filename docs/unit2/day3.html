@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="David Sellers" />
-  <title>Polynomials</title>
+  <title>Complex Operations</title>
   <style>
     html {
       color: #1a1a1a;
@@ -174,21 +174,181 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Polynomials</h1>
+<h1 class="title">Complex Operations</h1>
 <p class="author">David Sellers</p>
-<p class="date">Spring 25</p>
+<p class="date">Spring 2025</p>
 </header>
-<h1 id="polynomials">Polynomials</h1>
-<p>A <strong>polynomial</strong> is an expression that consists of
-variables and constants and the operations of addition, multiplication,
-and exponentiation with <strong>non-negative</strong> integer powers.
-That is, they can be written as <span class="math display">\[a_{n}x^{n}
-+ a_{n-1}x^{n-1} + a_{n-2}x^{n-2} + \dots + a_{2}x^{2} + a_{1}x +
-a_{0}.\]</span></p>
-<p>A polynomial consists of many <strong>monomials</strong>. And if we
-have polynomial consisting of two monomials it is called a
-<strong>binomial</strong> and with three monomials, a
-<strong>trinomial</strong>.</p>
+<h1 id="complex-numbers">Complex Numbers</h1>
+<p>Complex numbers are of the form <span class="math inline">\(a+bi, a,b
+\in \mathbb{R}\)</span> and undergo many familiar operations.
+Traditionally, we represent a complex number with the variable <span
+class="math inline">\(z\)</span>.</p>
+<h1 id="addition">Addition</h1>
+<p>To add complex numbers, <span
+class="math inline">\(z_{1}=a+bi\)</span> and <span
+class="math inline">\(z_{2}=c+di\)</span> we add the <strong>real
+parts</strong> and the <strong>imaginary parts</strong>. So we have
+$<span class="math inline">\(z_{1} + z_{2} =
+a+bi+c+di=a+c+(b+d)i.\)</span></p>
+<h1 id="subtraction">Subtraction</h1>
+<p>Similarly, to subtract complex numbers, <span
+class="math inline">\(z_{1}=a+bi\)</span> and <span
+class="math inline">\(z_{2}=c+di\)</span> we subract the <strong>real
+parts</strong> and the <strong>imaginary parts</strong>. So we have
+$<span class="math inline">\(z_{1} - z_{2} =
+a+bi-(c+di)=a-c+(b-d)i.\)</span></p>
+<h1 id="multiplication">Multiplication</h1>
+<p>To multiply complex numbers, we use the distributive property and
+simplify. <span
+class="math inline">\(z_{1}z_{2}=(a+bi)(c+di)=a(c+di)+bi(c+di)=ac+adi+bci+bdi^{2}=ac-bd+(ad+bc)i.\)</span>
+Notice <span class="math inline">\(i^{2}=-1.\)</span></p>
+<h2 id="powers-of-i">Powers of <span
+class="math inline">\(i\)</span></h2>
+<p>Examine the following powers.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Power</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(i\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(i^{2}\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(i^{3}\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(i^{4}\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(i^{5}\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(i^{6}\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(i^{7}\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(i^{8}\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(i^{9}\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(i^{10}\)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Is there a pattern?</p>
+<h2 id="modular-arithmetic">Modular Arithmetic</h2>
+<p>The modulus operation considers integer division, that is you cannot
+get a decimal or fractional result, and returns the remainder.
+Notationally, $ a (mod b) = c.$ For example, <span
+class="math inline">\(10 (mod 3) = 1\)</span> because 10 divided by 3
+has a remainder of 1.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Modulus</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0 (mod 4)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1 (mod 4)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2 (mod 4)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>3 (mod 4)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>4 (mod 4)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>5 (mod 4)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>6 (mod 4)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>7 (mod 4)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>8 (mod 4)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>9 (mod 4)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>10 (mod 4)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Notice there is a <strong>cycle</strong> here as well. Can we relate
+these two ideas to find <span class="math inline">\(i^{99}\)</span>?</p>
+<h1 id="division">Division</h1>
+<p>Division of Complex numbers is not defined. However, for cases
+like</p>
+<p><span class="math display">\[\frac{a+bi}{c+di}\]</span></p>
+<p>We still want to be able to represent the result in the standard form
+for Complex numbers. We can accomplish this by appealing to the
+<strong>complex conjugate</strong>.</p>
+<h2 id="complex-conjugate">Complex Conjugate</h2>
+<p>Given a complex number <span class="math inline">\(a+bi\)</span> its
+conjugate is <span class="math inline">\(a-bi\)</span>. This has a
+special property in that if we multiply a complex number and its
+conjugate we get:</p>
+<p><span class="math inline">\((a+bi)(a-bi) =
+a(a+bi)+bi(a-bi)=a^{2}-abi+abi-b^{2}i^{2}=a^{2}+b^{2}\)</span></p>
+<p>Notice the imaginary parts cancel leaving you with only real parts,
+and it is always the square of <span class="math inline">\(a\)</span>
+plus the square of <span class="math inline">\(b.\)</span></p>
+<p>With this information, we can simplify the previous example,</p>
+<p><span class="math display">\[\frac{a+bi}{c+di} \cdot
+\frac{c-di}{c-di} = \frac{ac+bd+(bc+ad)i}{c^{2}+d^{2}}\]</span></p>
+<h1 id="ordering-of-complex-numbers">Ordering of Complex Numbers</h1>
+<p>As we move from the real numbers to the complex numbers we lose the
+natural sense of ordering. The real numbers are one dimensional so there
+exists a natural sense of which number is closer to zero. However, with
+two-dimensional numbers this is less clear.</p>
+<h2 id="euclidean-distance">Euclidean Distance</h2>
+<p>We can still find the <strong>magnitude</strong> of these numbers by
+computing the Euclidean distance, i.e. <span
+class="math inline">\(d=\sqrt{x^{2}+y^{2}}.\)</span> This also extends
+to higher dimensions <span
+class="math inline">\(d=\sqrt{x^{2}+y^{2}+z^{2}}.\)</span></p>
 <p><a href="../unit2/day2.html">&lt;&lt; previous</a> <a
 href="../index.html">Home</a> <a href="day4.html">next &gt;&gt;</a></p>
 </body>

@@ -222,12 +222,82 @@ make sure every term in each polynomial is multiplied together.</p>
 higher powers can be quite tedious. We have two common methods for
 addressing this issue.</p>
 <h4 id="pascals-triangle">Pascal’s Triangle</h4>
-<p>The most accessible of these two methods is Pascal’s Triangle.</p>
+<p>The most accessible of these two methods is Pascal’s Triangle.
+Evaluate each of the following.</p>
+<ul>
+<li><span class="math inline">\((a+b)^{0}\)</span></li>
+<li><span class="math inline">\((a+b)^{1}\)</span></li>
+<li><span class="math inline">\((a+b)^{2}\)</span></li>
+<li><span class="math inline">\((a+b)^{3}\)</span></li>
+</ul>
+<p>We can list the coefficients in the following triangle, detect the
+pattern and use this to find the coefficients for any binomial
+expansion.</p>
+<p><span class="math display">\[
+\begin{array}{c}
+1 \\
+1 \quad 1 \\
+1 \quad 2 \quad 1 \\
+1 \quad 3 \quad 3 \quad 1 \\
+1 \quad 4 \quad 6 \quad 4 \quad 1 \\
+1 \quad 5 \quad 10 \quad 10 \quad 5 \quad 1 \\
+1 \quad 6 \quad 15 \quad 20 \quad 15 \quad 6 \quad 1 \\
+1 \quad 7 \quad 21 \quad 35 \quad 35 \quad 21 \quad 7 \quad 1 \\
+\end{array}
+\]</span></p>
+<p>We then have to determine the variables and their powers. Consider
+the result from <span
+class="math inline">\((a+b)^{3}=1a^{3}+3a^{2}b^{1}+3a^{1}b^{2}+1b^{3}.\)</span>
+Use the pattern we find here to find <span
+class="math inline">\((a+b)^{7}.\)</span></p>
 <h4 id="the-binomial-theorem">The Binomial Theorem</h4>
+<p>If we compute <span class="math inline">\((a+b)^{3}\)</span> by using
+repeated application of the distributive property and do not simplify
+using exponent properties, we get <span
+class="math display">\[(a+b)^{3}=aaa+aab+aba+baa+bab+bba+bbb\]</span></p>
+<p>This gives us all of the <strong>combinations</strong> of ways we can
+choose <span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span> from this expansion. So we might look
+at each of the following:</p>
+<ul>
+<li><span class="math inline">\(3 \choose 0\)</span></li>
+<li><span class="math inline">\(3 \choose 1\)</span></li>
+<li><span class="math inline">\(3 \choose 2\)</span></li>
+<li><span class="math inline">\(3 \choose 3\)</span></li>
+</ul>
+<p>These lead to the coefficients as well as the powers.</p>
+<p>Find <span class="math inline">\((a+b)^{8}\)</span>.</p>
 <h3 id="polynomial-division-caveats-again">Polynomial Division (Caveats
 Again)</h3>
+<p>This topic will be discussed more in depth in a later unit, but we
+need a partial understanding to complete our discussion of polynomial
+operations. We can divide polynomials provided that the degree of the
+divisor is less than the degree of the dividend. So, <span
+class="math display">\[\frac{x+4}{x^{2}+6x+8}\]</span> cannot be divided
+because the divisor has a degree of 2 and the dividend has a degree of
+one; however, <span
+class="math display">\[\frac{x^{2}+6x+8}{x+4}\]</span> can be divided
+because the degree of the divisor is 1 and the degree of the dividend is
+2. So lets perform the calculation.</p>
+<p>Note that this process is identical to the long division learned in
+basic arithmetic.</p>
+<p>Next try <span
+class="math display">\[\frac{x^{2}+3x+8}{x+4}\]</span></p>
 <h4 id="closure">Closure</h4>
+<p>Given <span class="math inline">\(\alpha, \beta \in
+\mathbb{P}\)</span>, we can say an operation is closed if for <span
+class="math inline">\(\alpha \ast \beta = \gamma\)</span> then <span
+class="math inline">\(\gamma \in \mathbb{P}.\)</span></p>
 <h2 id="set-of-polynomials">Set of Polynomials</h2>
+<p>From the discussion of polynomial operations, what did you notice
+about closure for</p>
+<ul>
+<li>Addition</li>
+<li>Subtraction</li>
+<li>Multiplication</li>
+<li>Division</li>
+</ul>
+<p>Do you know another set that has these same properties?</p>
 <p><a href="../unit2/day3.html">&lt;&lt; previous</a> <a
 href="../index.html">Home</a> <a href="day5.html">next &gt;&gt;</a></p>
 </body>

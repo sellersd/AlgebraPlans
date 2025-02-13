@@ -37,14 +37,67 @@ Multiplying binomials is a common operation and raising them to higher powers ca
 
 #### Pascal's Triangle
 
-The most accessible of these two methods is Pascal's Triangle.
+The most accessible of these two methods is Pascal's Triangle. Evaluate each of the following.
+
+- $(a+b)^{0}$
+- $(a+b)^{1}$
+- $(a+b)^{2}$
+- $(a+b)^{3}$
+
+We can list the coefficients in the following triangle, detect the pattern and use this to find the coefficients for any binomial expansion.
+
+$$
+\begin{array}{c}
+1 \\
+1 \quad 1 \\
+1 \quad 2 \quad 1 \\
+1 \quad 3 \quad 3 \quad 1 \\
+1 \quad 4 \quad 6 \quad 4 \quad 1 \\
+1 \quad 5 \quad 10 \quad 10 \quad 5 \quad 1 \\
+1 \quad 6 \quad 15 \quad 20 \quad 15 \quad 6 \quad 1 \\
+1 \quad 7 \quad 21 \quad 35 \quad 35 \quad 21 \quad 7 \quad 1 \\
+\end{array}
+$$
+
+We then have to determine the variables and their powers. Consider the result from $(a+b)^{3}=1a^{3}+3a^{2}b^{1}+3a^{1}b^{2}+1b^{3}.$ Use the pattern we find here to find $(a+b)^{7}.$
 
 #### The Binomial Theorem
 
+If we compute $(a+b)^{3}$ by using repeated application of the distributive property and do not simplify using exponent properties, we get
+$$(a+b)^{3}=aaa+aab+aba+baa+bab+bba+bbb$$
+
+This gives us all of the **combinations** of ways we can choose $a$ and $b$ from this expansion. So we might look at each of the following:
+
+- $3 \choose 0$
+- $3 \choose 1$
+- $3 \choose 2$
+- $3 \choose 3$
+
+These lead to the coefficients as well as the powers.
+
+Find $(a+b)^{8}$.
+
 ### Polynomial Division (Caveats Again)
+
+This topic will be discussed more in depth in a later unit, but we need a partial understanding to complete our discussion of polynomial operations. We can divide polynomials provided that the degree of the divisor is less than the degree of the dividend. So, $$\frac{x+4}{x^{2}+6x+8}$$ cannot be divided because the divisor has a degree of 2 and the dividend has a degree of one; however, $$\frac{x^{2}+6x+8}{x+4}$$ can be divided because the degree of the divisor is 1 and the degree of the dividend is 2. So lets perform the calculation.
+
+Note that this process is identical to the long division learned in basic arithmetic.
+
+Next try $$\frac{x^{2}+3x+8}{x+4}$$
 
 #### Closure
 
+Given $\alpha, \beta \in \mathbb{P}$, we can say an operation is closed if for $\alpha \ast \beta = \gamma$ then $\gamma \in \mathbb{P}.$
+
 ## Set of Polynomials
+
+From the discussion of polynomial operations, what did you notice about closure for
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
+Do you know another set that has these same properties?
 
 [<< previous](../unit2/day3.html) [Home](../index.html) [next >>](day5.html)
