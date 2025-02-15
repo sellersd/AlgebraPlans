@@ -20,4 +20,14 @@ Based on our previous experience, we know the GCF of the constants is $3^{1}$ an
 
 Find the GCF for $60x^{12}+15x^{9} +9x^{6} + 3x^{3}.$
 
+Remember that the approach we took for multiplying two binomials together,
+
+$$
+\begin{array}{cc}
+(2x+3)(3x+4) &= 2x(3x+4) + 3(3x+4)\\
+&= 6x^{2} + 8x + 9x + 12\\
+&= 6x^{2} + 17x + 12\\
+\end{array}
+$$
+
 [<< previous](../unit2/day6.html) [Home](../index.html) [next >>](day8.html)
