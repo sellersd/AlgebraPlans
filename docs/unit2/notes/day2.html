@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="David Sellers" />
+  <title>Complex Numbers</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Complex Numbers</h1>
+<p class="author">David Sellers</p>
+<p class="date">Spring 25</p>
+</header>
+<h1 id="complex-numbers">Complex Numbers</h1>
+<p>Solve <span class="math inline">\(\sqrt{4}.\)</span></p>
+<p>Solve <span class="math inline">\(x^{2} = 4.\)</span></p>
+<p>There is a subtle difference in these two cases. <span
+class="math inline">\(\sqrt{4}=2\)</span>, but <span
+class="math inline">\(x^{2}=4\)</span> has two cases. Even though we use
+the square root method to solve this equation and it has similarities
+with the first cases, <span
+class="math inline">\(\sqrt{x^{2}}=\sqrt{4}\)</span>, the better way to
+ask the question is what number squared equals 4, and in this case it is
+both 2 and -2, so we end up with <span class="math inline">\(x=\pm
+2.\)</span></p>
+<p>Similar to our discussion about truffles as we delve into the world
+or abstraction, the previous sets of numbers do not handle every need.
+Consider the equation <span class="math inline">\(x^{2} = -4\)</span>.
+Using the square root method, we have <span class="math inline">\(x=\pm
+\sqrt{-4}\)</span>. If <span class="math inline">\(x \in
+\mathbb{R}\)</span> then there is no solution, or more precisely, the is
+no real solution. But what if there was some other set of numbers that
+would provide a solution to these sets of problems. This seems somewhat
+strange and unfamiliar to us because it is introduce so late in the
+mathematical journey, but it is no different than when fractions or
+negative numbers were introduced previously.</p>
+<p>This new set of numbers is the <strong>complex</strong> numbers,
+<span class="math inline">\(\mathbb{C}\)</span>, and they allow us to
+take the square root of negative numbers. The complex numbers are a
+<strong>superset</strong> of the real numbers. This means all real
+numbers are complex numbers.</p>
+<h2 id="the-imaginary-unit">The Imaginary Unit</h2>
+<p>The complex numbers consist of a real part and an imaginary part and
+take the form <span class="math inline">\(z=a+bi\)</span> where <span
+class="math inline">\(a,b \in \mathbb{R}\)</span> and <span
+class="math inline">\(i=\sqrt{-1}.\)</span> For now, the key piece of
+information is that taking the square of a negative number is now
+possible.</p>
+<h3 id="examples">Examples</h3>
+<p>These simplify just like in previous units, but we now use the
+imaginary unit and complex numbers in the simplification process.</p>
+<ol type="1">
+<li><p><span class="math inline">\(\sqrt{-4}=\sqrt{-1 \cdot 4} =
+\sqrt{-1}\sqrt{4}=2i\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-9}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-16}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-25}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-36}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-49}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-64}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-81}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-100}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-121}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-144}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-50}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-162}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-72}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-32}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-128}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{-99}\)</span></p></li>
+</ol>
+<p>Not all roots of negatives require complex numbers.</p>
+<ol type="1">
+<li><span class="math inline">\(\sqrt[3]{-8}\)</span></li>
+</ol>
+<h2 id="application">Application</h2>
+<p>So we now know that for <span
+class="math inline">\(x^{2}=-4\)</span>, <span
+class="math inline">\(x=\pm 2i.\)</span></p>
+<p><a href="./day1.html">&lt;&lt; previous</a> <a
+href="../../index.html">Home</a> <a href="./day3.html">next
+&gt;&gt;</a></p>
+</body>
+</html>

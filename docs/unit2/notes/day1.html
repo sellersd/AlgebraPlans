@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="David Sellers" />
-  <title>Factoring Part 1</title>
+  <title>Sets</title>
   <style>
     html {
       color: #1a1a1a;
@@ -174,59 +174,67 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Factoring Part 1</h1>
+<h1 class="title">Sets</h1>
 <p class="author">David Sellers</p>
-<p class="date">Spring 2025</p>
+<p class="date">Spring 25</p>
 </header>
-<h1 id="factoring-polynomials">Factoring Polynomials</h1>
-<h2 id="gcf">GCF</h2>
-<p>Consider <span class="math inline">\(9x^2+3x\)</span>. This
-polynomial consists of 2 monomials, lets examine it in pieces to build a
-conceptual model.</p>
-<table>
-<thead>
-<tr class="header">
-<th>Constants</th>
-<th>Prime Factorization</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(9\)</span></td>
-<td><span class="math inline">\(3^{2}\)</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(3\)</span></td>
-<td><span class="math inline">\(3^{1}\)</span></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th>Variables</th>
-<th>Prime Factorization</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(x^{2}\)</span></td>
-<td><span class="math inline">\(x^{2}\)</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(x\)</span></td>
-<td><span class="math inline">\(x^{1}\)</span></td>
-</tr>
-</tbody>
-</table>
-<p>Based on our previous experience, we know the GCF of the constants is
-<span class="math inline">\(3^{1}\)</span> and analogously for <span
-class="math inline">\(x\)</span>, <span
-class="math inline">\(x^{1}.\)</span></p>
-<p>Find the GCF for <span class="math inline">\(60x^{12}+15x^{9} +9x^{6}
-+ 3x^{3}.\)</span></p>
-<h2 id="factoring-by-grouping">Factoring by Grouping</h2>
-<p><a href="../unit2/day6.html">&lt;&lt; previous</a> <a
-href="../index.html">Home</a> <a href="day8.html">next &gt;&gt;</a></p>
+<h1 id="sets">Sets</h1>
+<p>As discussed previously, sets are a collection of objects. Lets
+consider some useful sets.</p>
+<h2 id="counting">Counting</h2>
+<p>Imagine you and a friend are walking through the woods and you find a
+truffle. After you make this miraculous discovery then you would say you
+had 1 truffle and as you searched for more, you would have 2 truffles, 3
+truffles, etc. However, before you made this initial discovery you were
+not walking around thinking that you had 0 truffles. This is the
+<strong>natural</strong> way to think about counting and leads us to the
+set of natural numbers <span class="math display">\[\mathbb{N} =
+{1,2,3,4,...}.\]</span></p>
+<p>But, now that you have some truffles, you have no choice but to eat
+them. After devouring your find, you now have 0 truffles and some people
+would say we need a new set of numbers for this possibility and others
+would say we do not. Because we are a precocious bunch of students, we
+will consider this set the set of whole numbers <span
+class="math display">\[\mathbb{W}={0,1,2,3,4,...}.\]</span></p>
+<p>Now that all of the truffles are gone, you return to your village and
+brag about how delicious the truffles were. Chef Preston asks if your
+group of truffle searchers could provide her with 10 truffles for her
+new chocolate truffle recipe. You agree, but since you have 0 truffles,
+you now somehow have less than 0 truffles, or you could say you have -10
+truffles. Leading us to the set of <strong>integers</strong> which
+includes the natural numbers, their opposites, and zero. <span
+class="math display">\[\mathbb{Z}={...,-4,-3,-2,-1,0,1,2,3,4,...}\]</span></p>
+<p>You and your friend find 11 truffles, 10 for Chef Preston and 1
+extra. What is there to do with this extra truffle except eat it? If you
+have 1 truffle and 2 people to eat it then neither person receives an
+entire truffle, but all we have at this point are numbers in the set of
+integers, <span class="math inline">\(x \in \mathbb{Z}.\)</span> This
+does not allow for the case where we have 1 item split into 2 pieces,
+perhaps some sort of ratio, <span
+class="math inline">\(\frac{1}{2}.\)</span> These types of numbers are
+the <strong>rational</strong> numbers <span
+class="math display">\[\mathbb{Q} = {...,-4, -\frac{7}{2} -3,
+-\frac{2}{3}, 0, \frac{1}{2}, \frac{10}{5}, \frac{127}{3}, ...}\]</span>
+These numbers are any numbers that can be represented as a ratio and
+therefore include the integers. As decimals, these numbers can all be
+represented as terminating or repeating decimals.</p>
+<p>After eating half a truffle and walking back to town you discover a
+perfectly circular truffle. You measure the circumference and diameter
+and divide these two numbers, and while this number is close to $, you
+notice this does not give you a rational number, it is an
+<strong>irrational</strong> number. The result is a non-repeating,
+non-terminating decimal. This set of numbers is notated as <span
+class="math inline">\(\mathbb{R}-\mathbb{Q}\)</span> or <span
+class="math inline">\(\mathbb{R} \\ \mathbb{Q}.\)</span> Which means the
+set of <strong>real</strong> numbers less the set of rational numbers.
+So what are the real numbers?</p>
+<p>You can think of the set of real numbers <span
+class="math inline">\(\mathbb{R}\)</span> as all numbers that can be
+represented as a ratio or that cannot be represented as a ratio. That is
+the union of the sets of rational and irrational numbers. These are the
+numbers we are usually working with in algebra. However, don’t despair
+our journey through the set of numbers is not over yet.</p>
+<p><a href="">&lt;&lt; previous</a> <a href="../../index.html">Home</a>
+<a href="./day2.html">next &gt;&gt;</a></p>
 </body>
 </html>

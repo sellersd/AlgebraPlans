@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="David Sellers" />
+  <title>Polynomial Operations</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Polynomial Operations</h1>
+<p class="author">David Sellers</p>
+<p class="date">Spring 25</p>
+</header>
+<h1 id="polynomials">Polynomials</h1>
+<p>A <strong>polynomial</strong> is an expression that consists of
+variables and constants and the operations of addition, multiplication,
+and exponentiation with <strong>non-negative</strong> integer powers.
+That is, they can be written as <span class="math display">\[a_{n}x^{n}
++ a_{n-1}x^{n-1} + a_{n-2}x^{n-2} + \dots + a_{2}x^{2} + a_{1}x +
+a_{0}.\]</span></p>
+<p>A polynomial consists of many <strong>monomials</strong>. And if we
+have polynomial consisting of two monomials it is called a
+<strong>binomial</strong> and with three monomials, a
+<strong>trinomial</strong>.</p>
+<p>We can talk about the <strong>degree</strong> of a polynomial which
+is the highest power in the polynomial.</p>
+<h2 id="operations">Operations</h2>
+<h3 id="scalar-multiplication">Scalar Multiplication</h3>
+<p>Given a polynomial <span class="math inline">\(ax\)</span> and a
+scalar <span class="math inline">\(k\)</span>, then <span
+class="math inline">\(k \cdot ax = kax\)</span>.</p>
+<h3 id="polynomial-addition">Polynomial Addition</h3>
+<p>Polynomials can be added by combining like terms. This means we will
+add together any terms in which the variables have the same degree.</p>
+<p>We can think of polynomial subtraction either as its own operation or
+we can treat it as addition with a scalar multiple.</p>
+<p><span class="math inline">\(ax - bx = ax + -1(bx)\)</span></p>
+<h3 id="polynomial-multiplication-distribution">Polynomial
+Multiplication (Distribution)</h3>
+<p>We can multiply monomials by multiplying the constants and variables,
+that is <span class="math inline">\(ax \cdot bx = (ab) \cdot (xx) =
+abx^{2}\)</span>. For larger polynomials we need to develop a more
+rigorous rule set. Consider <span
+class="math inline">\(ax(bx+c)\)</span>, the product of a monomial and a
+binomial. Here we need to appeal to the distributive property which
+results in <span class="math inline">\(ax\cdot bx + ax \cdot c = abx^{2}
++ acx\)</span>.</p>
+<p>This is the idea we need for multiplying larger polynomials. We must
+make sure every term in each polynomial is multiplied together.</p>
+<ul>
+<li>(ax + b)(cx+d)</li>
+<li>(ax + b)(cx^{2}+dx+f)</li>
+</ul>
+<p>Multiplying binomials is a common operation and raising them to
+higher powers can be quite tedious. We have two common methods for
+addressing this issue.</p>
+<h4 id="pascals-triangle">Pascal’s Triangle</h4>
+<p>The most accessible of these two methods is Pascal’s Triangle.
+Evaluate each of the following.</p>
+<ul>
+<li><span class="math inline">\((a+b)^{0}\)</span></li>
+<li><span class="math inline">\((a+b)^{1}\)</span></li>
+<li><span class="math inline">\((a+b)^{2}\)</span></li>
+<li><span class="math inline">\((a+b)^{3}\)</span></li>
+</ul>
+<p>We can list the coefficients in the following triangle, detect the
+pattern and use this to find the coefficients for any binomial
+expansion.</p>
+<p><span class="math display">\[
+\begin{array}{c}
+1 \\
+1 \quad 1 \\
+1 \quad 2 \quad 1 \\
+1 \quad 3 \quad 3 \quad 1 \\
+1 \quad 4 \quad 6 \quad 4 \quad 1 \\
+1 \quad 5 \quad 10 \quad 10 \quad 5 \quad 1 \\
+1 \quad 6 \quad 15 \quad 20 \quad 15 \quad 6 \quad 1 \\
+1 \quad 7 \quad 21 \quad 35 \quad 35 \quad 21 \quad 7 \quad 1 \\
+\end{array}
+\]</span></p>
+<p>We then have to determine the variables and their powers. Consider
+the result from <span
+class="math inline">\((a+b)^{3}=1a^{3}+3a^{2}b^{1}+3a^{1}b^{2}+1b^{3}.\)</span>
+Use the pattern we find here to find <span
+class="math inline">\((a+b)^{7}.\)</span></p>
+<h4 id="the-binomial-theorem">The Binomial Theorem</h4>
+<p>If we compute <span class="math inline">\((a+b)^{3}\)</span> by using
+repeated application of the distributive property and do not simplify
+using exponent properties, we get <span
+class="math display">\[(a+b)^{3}=aaa+aab+aba+baa+bab+bba+bbb\]</span></p>
+<p>This gives us all of the <strong>combinations</strong> of ways we can
+choose <span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span> from this expansion. So we might look
+at each of the following:</p>
+<ul>
+<li><span class="math inline">\(3 \choose 0\)</span></li>
+<li><span class="math inline">\(3 \choose 1\)</span></li>
+<li><span class="math inline">\(3 \choose 2\)</span></li>
+<li><span class="math inline">\(3 \choose 3\)</span></li>
+</ul>
+<p>These lead to the coefficients as well as the powers.</p>
+<p>Find <span class="math inline">\((a+b)^{8}\)</span>.</p>
+<h3 id="polynomial-division-caveats-again">Polynomial Division (Caveats
+Again)</h3>
+<p>This topic will be discussed more in depth in a later unit, but we
+need a partial understanding to complete our discussion of polynomial
+operations. We can divide polynomials provided that the degree of the
+divisor is less than the degree of the dividend. So, <span
+class="math display">\[\frac{x+4}{x^{2}+6x+8}\]</span> cannot be divided
+because the divisor has a degree of 2 and the dividend has a degree of
+one; however, <span
+class="math display">\[\frac{x^{2}+6x+8}{x+4}\]</span> can be divided
+because the degree of the divisor is 1 and the degree of the dividend is
+2. So lets perform the calculation.</p>
+<p>Note that this process is identical to the long division learned in
+basic arithmetic.</p>
+<p>Next try <span
+class="math display">\[\frac{x^{2}+3x+8}{x+4}\]</span></p>
+<h4 id="closure">Closure</h4>
+<p>Given <span class="math inline">\(\alpha, \beta \in
+\mathbb{P}\)</span>, we can say an operation is closed if for <span
+class="math inline">\(\alpha \ast \beta = \gamma\)</span> then <span
+class="math inline">\(\gamma \in \mathbb{P}.\)</span></p>
+<h2 id="set-of-polynomials">Set of Polynomials</h2>
+<p>From the discussion of polynomial operations, what did you notice
+about closure for</p>
+<ul>
+<li>Addition</li>
+<li>Subtraction</li>
+<li>Multiplication</li>
+<li>Division</li>
+</ul>
+<p>Do you know another set that has these same properties?</p>
+<p><a href="./day3.html">&lt;&lt; previous</a> <a
+href="../../index.html">Home</a> <a href="./day5.html">next
+&gt;&gt;</a></p>
+</body>
+</html>
