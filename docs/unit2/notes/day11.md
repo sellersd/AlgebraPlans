@@ -13,8 +13,5 @@ There are also some special cases for factoring cubic polynomials. Let's look at
 
 Other cases will mostly be left for future classes.
 
-## The Fundamental Theorem of Algebra
-
-The Fundamental Theorem of Algebra states that for a polynomials of degree $n$ there exists $n$ Complex roots.
 
 [<< previous](./day10.html) [Home](../../index.html) [next >>](./day12.html)
