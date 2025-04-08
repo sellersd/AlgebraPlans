@@ -40,4 +40,10 @@
   - Horizontal Line Test
   - Domain Restriction to create invertible function
 
+## Common Functions
+
+<div>
+<iframe src="https://www.desmos.com/calculator/rdiggmnquc?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+</div>
+
 [<< previous]() [Home](../index.html) [next >>](./day2.html)
